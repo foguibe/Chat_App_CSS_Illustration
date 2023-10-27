@@ -1,0 +1,335 @@
+/************************************CSS RESET**********************************/
+/*
+1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    }
+    /*
+    2. Remove default margin
+    */
+    * {
+    margin: 0;
+    }
+    /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+    */
+    body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    }
+    /*
+    5. Improve media defaults
+    */
+    img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    }
+    /*
+    6. Remove built-in form typography styles
+    */
+    input, button, textarea, select {
+    font: inherit;
+    }
+    /*
+    7. Avoid text overflows
+    */
+    p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    }
+    /*
+    8. Create a root stacking context
+    */
+    #root, #__next {
+    isolation: isolate;
+    }
+    
+    
+    
+    /********************************************MY STYLING******************************************/
+    
+    body {
+        background-color: hsl(270, 20%, 96%);
+        font-family: 'Ubuntu', sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        position: relative;
+    }
+    
+    main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    #main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1000px;
+        position: relative;
+    }
+    
+    #device-container {
+        padding: 10px;
+        box-shadow: 1px 1px 10px 2px hsl(271, 36%, 24%);
+        border-radius: 30px;
+        position: relative;
+        max-width: 355px;
+        width: 100%;
+        z-index: 2;
+        background-color: white;
+    }
+    
+    #inner-container {
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    
+    .disc {
+        width: 60%;
+        height: 30px;
+        background-color: white;
+        border-radius: 25px;
+        position: absolute;
+        top: -7px;
+        z-index: 1;
+        left: 21%;
+    }
+    
+    #user-info {
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+        padding: 30px 20px 10px 20px;
+        border-radius: 5px;
+        position: relative;
+    }
+    
+    #user-info img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid hsl(0, 0%, 100%);
+    }
+    
+    #user-info h1 {
+        font-size: 16px;
+    }
+    
+    #user-info p {
+        font-size: 14px;
+    }
+    
+    #left-side-info i {
+        color: hsl(0, 0%, 100%);
+    }
+    
+    #left-side-info h1 {
+        color: hsl(0, 0%, 100%);
+        font-size: 15px;
+    }
+    
+    #left-side-info p {
+        color: hsl(276, 100%, 81%);
+        font-size: 11px;
+    }
+    
+    #left-side-info {
+        display: flex;
+        gap: 15px;
+    }
+    
+    #left-side-info img, i{
+        align-self: center;
+    }
+    
+    #chat-info {
+        background-color: hsl(270, 20%, 96%);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .dog-walker {
+        width: 60%;
+        background-color: hsl(276, 55%, 90%);
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 12px;
+        color: hsl(276, 55%, 52%);
+    }
+    
+    .dog-owner {
+        display: flex;
+        gap: 10px;
+        margin-left: auto;
+        max-width: 60%;
+    }
+    
+    p.dog-owner {
+        background-color: white;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 12px;
+    }
+    
+    .dog-owner img {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+    
+    .time {
+        background: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        width: 70%;
+        border-radius: 15px;
+        border-bottom-left-radius: 5px;
+    }
+    
+    .time i {
+        color: hsl(270, 20%, 96%);
+    }
+    
+    .time p {
+        color: hsl(270, 20%, 96%);
+        font-size: 12px;
+    }
+    
+    .time h2 {
+        font-size: 14px;
+        color: white;
+    }
+    
+    .time-info {
+        display: flex;
+        gap: 10px;
+    }
+    
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 0;
+        border-radius: 20px;
+        padding-left: 30px;
+        font-size: 12px;
+    }
+    
+    .input-container {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .input-container i {
+        position: absolute;
+        top: 50%;
+        left: 90%;
+        transform: translateY(-50%);
+    }
+    
+    #description {
+        width: 52%;
+        align-self: flex-start;
+        align-self: center;
+    }
+    
+    #description h1 {
+        font-size: 40px;
+        font-weight: 500;
+        color: hsl(271, 36%, 24%);
+        margin-bottom: 20px;
+    }
+    
+    #description p {
+        font-weight: 400;
+        font-size: 20px;
+        color: hsl(270, 7%, 64%);
+    }
+    
+    #purple-div {
+        width: 550px;
+        height: 600px;
+        right: 80%;
+        background: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+        position: absolute;
+        z-index: -1;
+        border-bottom-left-radius: 300px;
+        border-bottom-right-radius: 300px;
+    }
+    
+    footer p {
+        font-size: 12px;
+    }
+    
+    footer {
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    footer a {
+        text-decoration: none;
+    }
+    
+    #grey-div {
+        width: 700px;
+        height: 650px;
+        background-color: hsl(270, 20%, 94%);
+        position: absolute;
+        z-index: -1;
+        border-top-left-radius: 400px;
+        border-top-right-radius: 400px;
+        left: 78%;
+        bottom: 0;
+    }
+    
+    @media screen and (max-width: 1100px) {
+        main {
+            padding: 20px;
+        }
+    }
+    
+    @media screen and (max-width: 850px) {
+        #main-container {
+            flex-direction: column;
+        }
+    
+        #device-container {
+            align-self: center;
+        }
+    
+        #description p {
+            text-align: center;
+        }
+    
+        #description h1 {
+            text-align: center;
+        }
+    
+        #description {
+            width: 80%;
+            margin-top: 40px;
+        }
+    
+        main {
+            padding: 20px;
+        }
+    }
+    
+    @media screen  and (max-width: 375px) {
+        main {
+            padding: 10px;
+        }
+    
+        #description {
+            width: 100%;
+        }
+    }
